@@ -4,7 +4,7 @@ from scraping import *
 pd.set_option('display.max_columns', None)
 pd.set_option('display.width', None)
 pd.set_option('display.max_colwidth', None)
-coinNames = ['Bitcoin', 'Ethereum', 'ETH', 'BTC', 'ADA', 'XRP', 'DOGE', 'DOT', 'UNI', 'BCH', 'LTC', 'AXS', 'AAVE', 'LUNA']
+coinNames = ['Bitcoin', 'Ethereum', 'ETH', 'BTC', 'ADA', 'XRP', 'DOGE', 'DOT', 'UNI', 'BCH', 'LTC', 'AXS', 'AAVE', 'LUNA', 'TATA']
 coinNews = []
 controlString = ''
 controlArray = []
