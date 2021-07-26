@@ -30,11 +30,11 @@ def privacyPolicy(privacyBtnClass):
         EC.presence_of_element_located((By.CLASS_NAME, privacyBtnClass))
     )
     cookies.click()
-def soupMess(privacyPolicyCheck = True):
+def soupMess(titleTag, titleClass, privacyPolicyCheck = True):
     if privacyPolicyCheck:
         privacyPolicy('privacy-policy__accept-btn')
     soup = BeautifulSoup(readMoreNews('posts-listing__more-btn'), 'html.parser')
-    sopa = soup.find_all('span', 'post-card-inline__title')
+    sopa = soup.find_all(titleTag, titleClass)
     for itens in sopa:
         titles.append(itens.get_text())
     driver.quit()

@@ -33,7 +33,7 @@ def buildDict(data, coinNames,coinNews, controlString, controlArray):
 def buildDataFrame(info):
     df = pd.DataFrame(data = info)
     return df
-data = soupMess()
+data = soupMess('span', 'post-card-inline__title')
 info = buildDict(data, coinNames, coinNews, controlString, controlArray)
 dataframe = buildDataFrame(info)
 try:
