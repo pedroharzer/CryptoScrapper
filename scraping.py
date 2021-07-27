@@ -65,13 +65,10 @@ def getTextFromPage(sources): #get all the text from each page and return an arr
                 p.pop()
             else:
                 allTexts.append(e.get_text())
-        for filteredText in allTexts:
-            fullTxt = filteredText + ' '
-        print(filteredTexts) #filtered txt showing only last one
+        for t in allTexts:
+            fullTxt += t + ' '
         filteredTexts.append(fullTxt)
         fullTxt = ''
         allTexts = []
     return filteredTexts
-source = getFullPage(getLinks())
-print(getTextFromPage(source))
 
